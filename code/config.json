@@ -1,0 +1,5 @@
+{
+  "EQ": {"confirm_offset": 1, "market": "A_SHARE"},
+  "BD": {"confirm_offset": 1, "market": "A_SHARE"},
+  "QDII": {"confirm_offset": 2, "market": "A_SHARE_US"}
+}
