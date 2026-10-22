@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>基金确认日查询</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main>
+    <h1>基金交易日历与确认日查询</h1>
+    <section class="panel">
+      <div class="form-row">
+        <label for="time">提交时间</label>
+        <input id="time" type="datetime-local" required>
+        <label for="type">基金类型</label>
+        <select id="type">
+          <option value="EQ">EQ</option>
+          <option value="BD">BD</option>
+          <option value="QDII">QDII</option>
+        </select>
+        <button id="query-button" type="button">查询</button>
+      </div>
+      <div id="msg" role="alert"></div>
+    </section>
+    <section id="result" class="cards" aria-live="polite"></section>
+    <section class="panel">
+      <h2>判定依据</h2>
+      <ol id="reasons"></ol>
+    </section>
+    <section class="panel">
+      <div class="section-title"><h2>历史查询</h2><button id="history-button" type="button">刷新</button></div>
+      <div id="history"></div>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
